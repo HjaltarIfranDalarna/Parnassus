@@ -15,13 +15,13 @@ main()
 	time_t timer; 	
 	double seconds; 
 	int day = 0; 
-	int year = 0; 	
+	int year = 0; 
+	int value = 0; 
 	struct tm date = { 0 }; 
 	printf("Enter month \n"); 
 	char* str = malloc(100 * sizeof(char)); 
 	fgets(str, 100, stdin); 
 	str = strtok(str, "\n"); 
-	int value = 0; 
 	for (int i = 0; i < 72; i++) 
 	{ 
 		if (!strcmp(months[i], str)) 
