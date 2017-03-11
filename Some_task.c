@@ -14,6 +14,8 @@ main()
 { 
 	time_t timer; 	
 	double seconds; 
+	int day = 0; 
+	int year = 0; 	
 	struct tm date = { 0 }; 
 	printf("Enter month \n"); 
 	char* str = malloc(100 * sizeof(char)); 
@@ -41,14 +43,12 @@ main()
 		printf("Wrong input data\n"); //проверка на правильность ввода
 	} 
 	printf("Enter year\n"); 
-	int year = 0; 
 	scanf("%d", &year); 
 	if (year > 2017 || year < 1900) 
 	{ 
 		printf("Wrong input data\n"); //проверка на правильность ввода
 	} 
 	printf("Enter day\n"); 
-	int day = 0; 
 	scanf("%d", &day); 
 	if (day > 31 || day<1) 
 	{ 
